@@ -1,0 +1,43 @@
+.multiple-border {
+    --b: .2em;
+    /* border width */
+    --c: 1em;
+    /* corner size */
+    --r: 1em;
+    /* corner rounding */
+    position: relative;
+    margin: 1em auto;
+    border: solid var(--b) transparent;
+    padding: 1em;
+    max-width: 23em;
+    font: 1.25em ubuntu, sans-serif;
+
+    &::before {
+        position: absolute;
+        z-index: -1;
+        inset: calc(-1*var(--b));
+        border: inherit;
+        border-radius: var(--r);
+        background: linear-gradient(orange, white, gray) border-box;
+        --corner:
+            conic-gradient(from -90deg at var(--c) var(--c), red 25%, #0000 0) 0 0/ calc(100% - var(--c)) calc(100% - var(--c)) border-box;
+        --inner: conic-gradient(red 0 0) padding-box;
+        -webkit-mask: var(--corner), var(--inner);
+        -webkit-mask-composite: source-out;
+        mask: var(--corner) subtract, var(--inner);
+        content: ''
+    }
+}
+
+.module-border-wrap {
+    width: 100%;
+    padding: .3rem;
+    position: relative;
+    background: linear-gradient(to right, rgba(255, 166, 0, 0.474), gray);
+}
+
+.module {
+    background: whitesmoke;
+    color: #222;
+    padding: 2rem;
+}

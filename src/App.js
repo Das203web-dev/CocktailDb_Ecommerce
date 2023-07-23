@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Header from './components/Header/Header';
+import Home from './components/Home/Home'
+import Cocktails from './components/Cocktails/Cocktails';
+import AboutUs from './components/AboutUs/AboutUs';
+import Cart from './components/Cart/Cart';
+import NotFound from './components/NotFound/NotFound';
+import Footer from './components/Footer/Footer';
+// import { Modal } from '@mui/material';
+// import Detail from './components/Cocktails/CocktailDetails/Details/Detail';
+// import CustomModal from './components/Cocktails/CocktailDetails/Modal/CustomModal';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header></Header>
+      <Routes>
+        <Route exact path='/home' element={<Home></Home>}></Route>
+        <Route exact path='/' element={<Home></Home>}></Route>
+        <Route path='/cocktails' element={<Cocktails></Cocktails>}></Route>
+        <Route path='/about_us' element={<AboutUs></AboutUs>}></Route>
+        <Route path='/cart' element={<Cart></Cart>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
+      </Routes>
+      <Footer></Footer>
     </div>
   );
 }
