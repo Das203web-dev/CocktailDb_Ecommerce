@@ -4,7 +4,7 @@ import useCart from '../../hooks/useCart';
 import { FaMinus, FaPlus, FaTrash } from 'react-icons/fa';
 
 
-const Cart = (props) => {
+const Cart = () => {
     const [products, setProducts] = useProducts();
     const [cart, setCart] = useCart(products);
     const handleIncreaseQuantity = (productId) => {

@@ -7,9 +7,6 @@ import AboutUs from './components/AboutUs/AboutUs';
 import Cart from './components/Cart/Cart';
 import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
-// import { Modal } from '@mui/material';
-// import Detail from './components/Cocktails/CocktailDetails/Details/Detail';
-// import CustomModal from './components/Cocktails/CocktailDetails/Modal/CustomModal';
 
 
 function App() {
@@ -17,8 +14,8 @@ function App() {
     <div className="App">
       <Header></Header>
       <Routes>
-        <Route exact path='/home' element={<Home></Home>}></Route>
-        <Route exact path='/' element={<Home></Home>}></Route>
+        <Route exact path='/CocktailDb_Ecommerce' element={<Home></Home>}></Route>
+        <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/cocktails' element={<Cocktails></Cocktails>}></Route>
         <Route path='/about_us' element={<AboutUs></AboutUs>}></Route>
         <Route path='/cart' element={<Cart></Cart>}></Route>
