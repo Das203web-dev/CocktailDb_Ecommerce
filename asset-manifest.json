@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CocktailDb_Ecommerce/static/css/main.e82076e3.css",
-    "main.js": "/CocktailDb_Ecommerce/static/js/main.4ea861d4.js",
+    "main.js": "/CocktailDb_Ecommerce/static/js/main.c6be089b.js",
     "static/js/787.6baea7a2.chunk.js": "/CocktailDb_Ecommerce/static/js/787.6baea7a2.chunk.js",
     "static/media/aboutImg1.jpg": "/CocktailDb_Ecommerce/static/media/aboutImg1.c833e318dbc949408a1e.jpg",
     "static/media/image1.jpg": "/CocktailDb_Ecommerce/static/media/image1.dbe94a5b7d307e565fdd.jpg",
@@ -14,11 +14,11 @@
     "static/media/image3.jpg": "/CocktailDb_Ecommerce/static/media/image3.36a61117db7a15a8ec16.jpg",
     "index.html": "/CocktailDb_Ecommerce/index.html",
     "main.e82076e3.css.map": "/CocktailDb_Ecommerce/static/css/main.e82076e3.css.map",
-    "main.4ea861d4.js.map": "/CocktailDb_Ecommerce/static/js/main.4ea861d4.js.map",
+    "main.c6be089b.js.map": "/CocktailDb_Ecommerce/static/js/main.c6be089b.js.map",
     "787.6baea7a2.chunk.js.map": "/CocktailDb_Ecommerce/static/js/787.6baea7a2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e82076e3.css",
-    "static/js/main.4ea861d4.js"
+    "static/js/main.c6be089b.js"
   ]
 }
