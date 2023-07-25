@@ -9,7 +9,7 @@ import { FaTrash } from 'react-icons/fa';
 
 const Cocktails = () => {
     //importing custom hook that is made by me......
-    const [cocktails, searchText, searchHandler] = useProducts()
+    const [cocktails, searchText, searchHandler, searchNotFound] = useProducts()
 
     //cart state setup and update implementation.....
     const [cart, setCart] = useCart(cocktails)
@@ -52,7 +52,7 @@ const Cocktails = () => {
             <h1 className='text-4xl'>THIS IS OUR <br /><span className='text-amber-500 font-bold'>COCKTAILS</span> COLLECTION</h1>
             <br />
             <input onChange={searchHandler} className='border-2 text-white placeholder: border-teal-950 p-2 rounded bg-teal-950 w-1/2 hover:bg-teal-50 hover:text-slate-950 focus:ring-1' type="search" value={searchText} name="" id="" placeholder='Search Your Favorite Drink' />
-            {/* {<Orders cart={cart} cocktails={cocktails} handleAddTocart={handleAddTocart} removeItemFromCart={removeItemFromCart} clearCart={clearCart}></Orders>} */}
+            {searchNotFound && <p className='text-4xl text-red-600 font-bold'>Product Not Found</p>}
             <div className='grid md:grid-cols-3 sm:grid-cols-1 lg:grid-cols-4  gap-4'>
                 <div className='grid md:grid-cols-2 lg:grid-cols-3 md:col-span-2  lg:col-span-3 items-center gap-5 mt-10'>
                     {
